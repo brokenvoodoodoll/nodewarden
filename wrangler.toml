@@ -1,7 +1,6 @@
 name = "nodewarden"
 main = "src/index.ts"
 compatibility_date = "2024-01-01"
-workers_dev = false
 
 [build]
 command = "npm run build"
@@ -43,3 +42,6 @@ new_sqlite_classes = [ "BackupTransferRunner" ]
 [observability.logs]
 enabled = true
 invocation_logs = true
+
+[workers]
+dev = false
